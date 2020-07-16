@@ -6,11 +6,12 @@
 }
 
 body {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 16px;
+  letter-spacing: 0.03em;
   background-color: #ffffff;
   color: var(--primery-text-color);
 }
@@ -21,10 +22,12 @@ body {
 .logo {
   color: #000000;
   text-decoration: none;
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 700;
   font-size: 26px;
   line-height: 31px;
-  font-weight: bold;
+  letter-spacing: 0.03em;
 }
 .first-logo {
   color: var(--changing-text-color);
@@ -47,6 +50,7 @@ body {
 .menu-address .link {
   color: #757575;
   text-decoration: none;
+  font-style: normal;
   font-weight: 500;
 }
 .menu-address .link:hover,
@@ -60,43 +64,54 @@ body {
   font-size: 44px;
   line-height: 60px;
   text-align: center;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
 }
-.section .section-title {
+
+.section > .section-qualities h3 {
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.section > .section-qualities p {
+  color: var(--secondary-text-color);
+  line-height: 24px;
+  letter-spacing: 0.03em;
+}
+
+.section > .section-title {
   font-weight: bold;
   font-size: 36px;
   line-height: 42px;
   text-align: center;
+  letter-spacing: 0.03em;
 }
-.section .section-activity .activity {
-  font-weight: bold;
-  text-align: center;
-  text-transform: uppercase;
+.section > .section-activity h3 {
   background: rgba(47, 48, 58, 0.8);
   color: var(--third-text-color);
-}
-
-.section .section-qualities .qualities-title {
+  font-size: 14px;
   font-weight: bold;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 
-.section .section-qualities p {
-  color: var(--secondary-text-color);
-  line-height: 24px;
-}
-
-.section .section-command h3 {
+.section > .section-command h3 {
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
   text-align: center;
+  letter-spacing: 0.03em;
 }
 
-.section .section-command p {
+.section > .section-command p {
   color: var(--secondary-text-color);
   font-size: 16px;
   line-height: 19px;
   text-align: center;
+  letter-spacing: 0.03em;
 }
 
 .footer {
@@ -104,12 +119,21 @@ body {
   color: var(--third-text-color);
 }
 
+.footer .address {
+  font-style: normal;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+}
+
 .footer .footer-logo {
   color: var(--third-text-color);
   text-decoration: none;
-  font-weight: bold;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 700;
   font-size: 26px;
   line-height: 31px;
+  letter-spacing: 0.03em;
 }
 .footer-address .link {
   color: rgba(255, 255, 255, 0.6);
@@ -141,28 +165,30 @@ body {
   font-size: 16px;
 }
 
-.button {
+.subscription > .button {
   color: var(--third-text-color);
   background: var(--changing-text-color);
+  text-decoration: none;
   font-weight: bold;
   font-size: 16px;
   line-height: 30px;
   display: flex;
   align-items: center;
   text-align: center;
-  text-decoration: none;
+  letter-spacing: 0.06em;
 }
 
 /* Portfolio */
 
-.section .section-filter .link {
+.section > .section-filter .link {
+  color: var(--primery-text-color);
+  background: var(--third-text-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 26px;
   text-align: center;
+  letter-spacing: 0.03em;
   text-decoration: none;
-  color: var(--primery-text-color);
-  background: var(--third-text-color);
 }
 
 .section .section-filter .link:hover,
@@ -171,19 +197,27 @@ body {
   background: var(--changing-text-color);
 }
 
-.section .section-group .link {
+.section > .section-group .link {
   color: var(--primery-text-color);
   text-decoration: none;
 }
 
-.section .section-group .link h3 {
+.section > .section-group .link > h3 {
   font-weight: bold;
   font-size: 18px;
   line-height: 36px;
 }
 
-.section .section-group p {
+.section > .section-group p {
   color: var(--secondary-text-color);
   font-size: 16px;
   line-height: 30px;
+  letter-spacing: 0.03em;
+}
+
+.section > .section-group .text {
+  color: var(--primery-text-color);
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
 }

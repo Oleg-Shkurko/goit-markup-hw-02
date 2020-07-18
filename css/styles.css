@@ -38,6 +38,13 @@ body {
   text-decoration: none;
   font-weight: 500;
 }
+
+.menu-nav .link-activ {
+  color: var(--changing-text-color);
+  text-decoration: none;
+  font-weight: 500;
+}
+
 .menu-nav .link:hover,
 .menu-nav .link:focus {
   color: var(--changing-text-color);
